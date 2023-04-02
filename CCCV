@@ -1,0 +1,26 @@
+break;
+    }
+    case 'voirManga':
+
+        {
+            include("controleur/c_page.php");
+            break;
+        }
+    case 'Animes':
+
+        {
+            include("controleur/c_page.php");
+            break;
+        }
+    case 'Film_animation':
+
+        {
+            include("controleur/c_page.php");
+            break;
+        }
+    case 'Modifmanga':
+        {
+            include("controleur/c_page.php");
+            break;
+        }
+    
