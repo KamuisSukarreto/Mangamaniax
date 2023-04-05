@@ -1,7 +1,11 @@
 
 /* V2ACTU*/
  
-body {
+@media screen {
+  
+
+  
+ body {
   background-image: url(https://images5.alphacoders.com/111/1115214.jpg);
   background-color: #f2f2f2;
   background-repeat: no-repeat;
@@ -138,3 +142,4 @@ background-color: orange;
     position: absolute;
     top: 17px;
 }   
+}

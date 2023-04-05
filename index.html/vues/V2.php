@@ -90,15 +90,20 @@ foreach($lesActus as $lesInfos){
                             <div class="col-md-4">
                               <img src="<?php echo $Img_acc?>" class="card-img" alt="...">
                             </div>
+
                             <div class="col-md-8">
+
                               <div class="card-body">
                                 <h5 class="card-title"><?php echo $titre?></h5>
                                 <p class="card-text"><?php echo $contenu?></p>
                                 <a href="index.php?uc=voirManga&action=voirleActu&idPage=<?php echo $lettre ?>" class="stretched-link"></a>
                               </div>
+
                             </div>
+
                           </div>
                         </div>
+                      </div>
 <?php
 }
 }
