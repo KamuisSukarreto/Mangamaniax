@@ -29,11 +29,18 @@ case 'voirLesAnimes':
         {
             $lesanimes = getTousLesAnimes();    
             include('vues/V2.php');
+            
             break;
         }
 
 
-    
+case 'recherche':
+        {
+            $import = $_POST['search'];
+            $recherche = getTouteLesRecherche($import);
+            include ('vues/V2.php');
+            break;
+        }
 }
 
 

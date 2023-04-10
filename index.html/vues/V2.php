@@ -85,7 +85,7 @@ foreach($lesActus as $lesInfos){
 
                     
                       <div class="col-lg-6">
-                        <div class="card mb-3">
+                        <div class="card-mb-3">
                           <div class="row no-gutters">
                             <div class="col-md-4">
                               <img src="<?php echo $Img_acc?>" class="card-img" alt="...">
@@ -111,6 +111,14 @@ foreach($lesActus as $lesInfos){
 
 
 if(isset($_REQUEST['uc']) && $_REQUEST['uc']=='voirAnime'){
+  if(!isset($_REQUEST['action'])){
+
+  
+foreach($lesanimes as $unAnime){
+  $id = $unAnime['id'];
+  $genre = $unAnime['genre'];
+  $Img_acc = $unAnime['Img_acc'];
+
 
 
 
@@ -120,7 +128,7 @@ if(isset($_REQUEST['uc']) && $_REQUEST['uc']=='voirAnime'){
 
 
           <div class="col-md-2">
-          <a href="index.php?uc=voirManga&action=voirLeManga&idPage=<?php echo $lettre ?>">
+          <a href="index.php?uc=voirManga&action=voirLeManga&idPage=<?php echo $id ?>">
             <div class="card mb-3">
               <img src="<?php echo $Img_acc?>" class="card-img-top" alt="...">
               <div class="card-img-overlay">
@@ -133,8 +141,32 @@ if(isset($_REQUEST['uc']) && $_REQUEST['uc']=='voirAnime'){
 
 <?php
 
+}
+  }
+  else{
+    foreach($recherche as $uneAnime){
+      $id = $uneAnime['id'];
+      $genre = $uneAnime['genre'];
+      $Img_acc = $uneAnime['Img_acc'];
+    
+    ?>
+    
+    <div class="col-md-2">
+          <a href="index.php?uc=voirManga&action=voirLeManga&idPage=<?php echo $id ?>">
+            <div class="card mb-3">
+              <img src="<?php echo $Img_acc?>" class="card-img-top" alt="...">
+              <div class="card-img-overlay">
+                <h5 class="card-title1"><?php echo $genre ?></h5>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <?php
 
   }
+}
+}
 
 ?>
 

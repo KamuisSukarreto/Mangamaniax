@@ -6,6 +6,7 @@ require_once("modeles/fonctions.php");
 require_once("modeles/fonction_foranime.php");
 require_once("modeles/fonction_forFA.php");
 require_once("modeles/fonction_formanga.php");
+require_once("modeles/recherche.php");
 
 
 
